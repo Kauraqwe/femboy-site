@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Muhammed Yunus'un Femboy Günlüğü 💅</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, pink, lightblue);
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding: 50px;
+      color: white;
+    }
+
+    h1 {
+      font-size: 3em;
+      animation: rainbow 3s infinite;
+    }
+
+    @keyframes rainbow {
+      0% {color: pink;}
+      25% {color: yellow;}
+      50% {color: cyan;}
+      75% {color: magenta;}
+      100% {color: pink;}
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .photo-container {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .photo-container img {
+      border-radius: 20px;
+      box-shadow: 0 0 30px white;
+      width: 300px;
+      transition: 0.5s ease;
+    }
+
+    .photo-container:hover img {
+      transform: rotate(5deg) scale(1.05);
+    }
+
+    .dokun {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(255, 255, 255, 0.7);
+      color: hotpink;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      background: white;
+      color: hotpink;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: hotpink;
+      color: white;
+    }
+  </style>
+</head>
+<body onload="playIntro()">
+
+  <h1>🌸 Muhammed Yunus'un Femboy Cenneti'ne Hoş Geldin 💖</h1>
+  <p>Bir dokun, bin cringe işit 😭</p>
+
+  <div class="gallery">
+    <div class="photo-container" onclick="showComment(0)">
+      <img src="https://i.ibb.co/hSz81f7/521850722-1270436807793891-1553474479728807924-n.jpg" alt="Yunus 1">
+      <div class="dokun">DOKUN</div>
+    </div>
+    <div class="photo-container" onclick="showComment(1)">
+      <img src="https://i.ibb.co/WNsjMKt0/520476222-1579064159717568-1258407595000535599-n.jpg" alt="Yunus 2">
+      <div class="dokun">DOKUN</div>
+    </div>
+    <div class="photo-container" onclick="showComment(2)">
+      <img src="https://i.ibb.co/dJXBvpqN/520886389-1285016263290242-5390581778685267292-n.jpg" alt="Yunus 3">
+      <div class="dokun">DOKUN</div>
+    </div>
+  </div>
+
+  <br>
+  <button onclick="femboyify()">YUNUS ARTIK FEMBOY 😭💖</button>
+
+  <!-- Filiz Kemal MÜZİK -->
+  <audio id="kemalSong" autoplay>
+    <source src="https://www.myinstants.com/media/sounds/among-us-trap-remix.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Buton müziği -->
+  <audio id="femboySong" src="https://www.myinstants.com/media/sounds/femboy-anthem.mp3"></audio>
+
+  <script>
+    const comments = [
+      "Kızlar bu çocuğa dikkat edin... lipgloss’u bile var 💅",
+      "‘Abisi bu filtre ne?’ – Bu filtre değil, bu Femboy ışığı 😳",
+      "Muhammed Yunus: ‘Ben sadece softum’ demişti... Oysa o gün pastel blazer giymişti 😭"
+    ];
+
+    function showComment(index) {
+      alert(comments[index]);
+    }
+
+    function femboyify() {
+      document.body.style.background = "url('https://media.tenor.com/7pRoTs1YxG8AAAAC/femboy-femboyfriday.gif')";
+      document.body.style.backgroundSize = "cover";
+      document.getElementById("femboySong").play();
+      alert("Muhammed Yunus... artık pastel evrendesin 🌸💅\nFemboy enerjisi aktive edildi!");
+    }
+
+    function playIntro() {
+      const song = document.getElementById("kemalSong");
+      song.volume = 1; // SON SES
+      song.play();
+    }
+  </script>
+
+</body>
+</html>
